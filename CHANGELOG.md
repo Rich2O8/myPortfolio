@@ -75,6 +75,15 @@ the following form: YYYY.0M.0D.
 - Designed a playing card value component
 - Designed a daily step storage component
 ```
+## 2024.10.14
+
+### Added
+
+- Designed a proof of concept for playing card value component
+
+### Updated
+
+- Changed design to include constructor method, as well as get and set methods.
 
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
