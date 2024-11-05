@@ -66,6 +66,16 @@ the following form: YYYY.0M.0D.
 - Created a README at the root to explain how to use the template repo
 - Created initial drafts of the six portfolio assessments
 - Added READMEs to key folders like `test` and `lib` to explain their purpose
+## 2024.11.05
+
+## Added
+- Implemeneted grammar and other suggestions to proof of concept.
+
+## 2024.10.14
+
+### Added
+
+- Designed a proof of concept for playing card value component
 
 ## 2024.09.15
 
@@ -74,14 +84,9 @@ the following form: YYYY.0M.0D.
 - Designed a bank account component
 - Designed a playing card value component
 - Designed a daily step storage component
-```
-## 2024.10.14
-
-### Added
-
-- Designed a proof of concept for playing card value component
-
 ### Updated
+
+```
 
 - Changed design to include constructor method, as well as get and set methods.
 
