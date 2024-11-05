@@ -1,13 +1,12 @@
-import components.map.Map1L;
+import java.util.HashMap;
 
-public class cardCollectionConcept {
-    private String card;private Map<
-    String date,
-    int value>cardValues;
+public class CardCollectionConcept {
+    private String card;
+    private HashMap<String, Integer> cardValues;
 
-    public cardCollectionConcept(String cardName) {
+    public CardCollectionConcept(String cardName) {
         this.card = cardName;
-        this.cardValues = new Map1L<>();
+        this.cardValues = new HashMap<String, Integer>();
     }
 
     public String getCard() {
@@ -15,15 +14,15 @@ public class cardCollectionConcept {
     }
 
     public void setDateValue(String date, int value) {
-        this.cardValues.add(date, value);
+        this.cardValues.put(date, value);
     }
 
     public int getValueAtDate(String date) {
-        this.cardValues.value(date);
+        return this.cardValues.get(date);
     }
 
     public static void main(String[] args) {
-        cardCollectionConcept card1 = new cardCollectionConcept("Pikachu");
+        CardCollectionConcept card1 = new CardCollectionConcept("Pikachu");
 
         String d1 = "10/12/2021", d2 = "12/18/2024";
         int v1 = 500, v3 = 1500;
