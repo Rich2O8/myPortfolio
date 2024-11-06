@@ -66,6 +66,17 @@ the following form: YYYY.0M.0D.
 - Created a README at the root to explain how to use the template repo
 - Created initial drafts of the six portfolio assessments
 - Added READMEs to key folders like `test` and `lib` to explain their purpose
+
+## 2024.11.05
+
+### Added
+
+- Designed kernel and enhanced interfaces for CardCollection component
+
+### Updated
+
+- Changed design to include a user kernel and enhanced interface draft.
+
 ## 2024.11.05
 
 ## Added
