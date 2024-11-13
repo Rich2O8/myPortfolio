@@ -14,6 +14,7 @@ public interface CardCollection extends CardCollectionKernel {
      * @param date2
      *            the second date to get card value from
      * @return the difference in value for this.
+     * @requires date1 is older than date2.
      * @ensures this = #this the size of this does not change
      */
     int valueBWDates(String date1, String date2);
