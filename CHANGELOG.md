@@ -54,6 +54,18 @@ the following form: YYYY.0M.0D.
 - Removed `java.saveActions.organizeImports` setting from `settings.json`
 - Removed references to `Point3D` completely
 
+## 2024.11.11
+
+### Added
+
+- Designed abstract class for CardCollection component
+
+### Updated
+
+- Implemented Secondary methods and key Object methods (equals and hashCode).
+- Not an update, I keep getting a red squigly line = "the hierarchy of the type ___ is inconsistent"
+- Edited changeDate contract to make more sense: date1 -> original date.
+
 ## [2024.01.07]
 
 ### Added
