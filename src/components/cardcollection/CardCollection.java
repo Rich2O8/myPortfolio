@@ -14,24 +14,25 @@ public interface CardCollection extends CardCollectionKernel {
      * @param date2
      *            the second date to get card value from
      * @return the difference in value for this.
+     * @requires date1 is older than date2.
      * @ensures this = #this the size of this does not change
      */
     int valueBWDates(String date1, String date2);
 
     /**
-     * Changes the original date {@code date1} to the new date of a date, value
+     * Changes the original date {@code ogDate} to the new date of a date, value
      * pair of this.
      *
-     * @param date1
+     * @param ogDate
      *            the original date of a date, value pair of this.
      * @param date2
      *            the new date of a date, value pair of this.
      * @ensures {@code
-     * date1, value -> date2, value
+     * ogDate, value -> date2, value
      * this = #this
      * }
      */
-    void changeDate(String date1, String date2);
+    void changeDate(String ogDate, String date2);
 
     /**
      * Reports if the card value at {@code date1} is bigger than {@code date2}.
