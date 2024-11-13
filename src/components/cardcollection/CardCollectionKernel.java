@@ -41,7 +41,7 @@ public interface CardCollectionKernel extends Standard<CardCollection> {
 
     /**
      * Reports the value of this at {@code date}.
-     * 
+     *
      * @param date
      *            the {@code String} date of the value of this.
      * @return the value of this at {@code date}
