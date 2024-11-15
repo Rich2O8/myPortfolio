@@ -8,6 +8,13 @@ import components.standard.Standard;
 public interface CardCollectionKernel extends Standard<CardCollection> {
 
     /**
+     * Reports the size of the map that stores the values of a card.
+     *
+     * @return the size of the value map of {@code this}
+     */
+    int mapSize();
+
+    /**
      * Retrives the name of the card in this.
      *
      * @return cardName of {@code this}
