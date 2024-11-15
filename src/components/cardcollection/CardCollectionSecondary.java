@@ -32,6 +32,8 @@ public class CardCollectionSecondary implements CardCollection {
             CardCollection otherCard = (CardCollection) an;
             if (this.card() != otherCard.card()) {
                 same = false;
+            } else if (this.mapSize() != otherCard.mapSize()) {
+                same = false;
             }
         } else {
             same = false;
