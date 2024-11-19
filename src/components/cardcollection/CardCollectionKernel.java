@@ -1,5 +1,6 @@
 package components.cardcollection;
 
+import components.map.Map;
 import components.standard.Standard;
 
 /**
@@ -55,4 +56,11 @@ public interface CardCollectionKernel extends Standard<CardCollection> {
      * @ensure this = #this
      */
     int valAtDate(String date);
+
+    /**
+     * Removes any pair in the map of values dates, values.
+     *
+     * @return a pair of date, and the value at date.
+     */
+    Map.Pair<String, Integer> removeAnyDate();
 }
