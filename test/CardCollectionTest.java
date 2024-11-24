@@ -643,4 +643,64 @@ public class CardCollectionTest {
 
         org.junit.Assert.assertEquals(twentyOneYes, twentyOneBigger23);
     }
+
+    /**
+     * Testing equals on 2 cards that differ in the name of the card.
+     */
+    @Test
+    public void testEquals() {
+        CardCollectionMap pikaCard = new CardCollectionMap("Pikachu");
+        CardCollectionMap pikaEvolved = new CardCollectionMap("Pikachu Hyped");
+
+        boolean notTrue = pikaCard.equals(pikaEvolved);
+        boolean expectedEqls = false;
+
+        org.junit.Assert.assertEquals(expectedEqls, notTrue);
+    }
+
+    /**
+     * Testing equals on 2 cards that differ in the date,value map.
+     */
+    @Test
+    public void testEquals1() {
+        CardCollectionMap pikaCard = new CardCollectionMap("Pikachu");
+        CardCollectionMap pikaCard2 = new CardCollectionMap("Pikachu");
+
+        pikaCard.addCardValue("11/24/2024", 1);
+        pikaCard.addCardValue("11/24/2020", 0);
+
+        pikaCard.addCardValue("11/24/2024", 2);
+
+        boolean notTrue = pikaCard.equals(pikaCard2);
+        boolean expectedEqls = false;
+
+        org.junit.Assert.assertEquals(expectedEqls, notTrue);
+    }
+
+    /**
+     * Testing hashcode on an empty card.
+     */
+    @Test
+    public void testHashCode() {
+        String pika = "Pikachu";
+        CardCollectionMap pikaCard = new CardCollectionMap(pika);
+
+        int pikaHash = pikaCard.hashCode(), expectedHash = pika.hashCode();
+
+        org.junit.Assert.assertEquals(expectedHash, pikaHash);
+    }
+
+    /**
+     * Testing hashcode on a card with map size 1.
+     */
+    @Test
+    public void testHashCode1() {
+        String pika = "Pikachu";
+        CardCollectionMap pikaCard = new CardCollectionMap(pika);
+        pikaCard.addCardValue("08/04/2021", 2);
+
+        int pikaHash = pikaCard.hashCode(), expectedHash = pika.hashCode();
+
+        org.junit.Assert.assertEquals(expectedHash, pikaHash);
+    }
 }
