@@ -3,9 +3,18 @@ import components.simplereader.SimpleReader1L;
 import components.simplewriter.SimpleWriter1L;
 
 /**
- * First use case for CardCollection component.
+ * First use case for CardCollection component. This use case will promt the
+ * user to make a card by giving it a name, then start adding values with their
+ * dates. Then, if the card has at least one value, it will ask if they want to
+ * edit one of their entries. At the end, this use case will print out the card
+ * and its entries in no particular order.
  */
-public class PokemonCard {
+public final class CardMaker {
+    /**
+     * No argument constructor--private to prevent instantiation.
+     */
+    private CardMaker() {
+    }
 
     /**
      * Main class using OSU read and write components.
@@ -44,7 +53,7 @@ public class PokemonCard {
                 String dateString = in.nextLine();
 
                 //Asks user for the value at the date given.
-                out.print("What was the value of " + userCard.card() + "at "
+                out.print("What was the value of " + userCard.card() + " at "
                         + dateString + " ? ");
                 int cardValue = in.nextInteger();
 
@@ -55,7 +64,7 @@ public class PokemonCard {
                 if (!add && userCard.mapSize() > 0) {
                     //Asks the user if they want to edit a response
                     out.print(
-                            "Would you like to edit a response's date? (Y/N):");
+                            "Would you like to edit a response's date? (Y/N): ");
                     String editYn = in.nextLine();
 
                     if (editYn.toUpperCase().equals("Y")) {
