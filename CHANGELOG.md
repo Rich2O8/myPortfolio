@@ -54,6 +54,24 @@ the following form: YYYY.0M.0D.
 - Removed `java.saveActions.organizeImports` setting from `settings.json`
 - Removed references to `Point3D` completely
 
+## 2024.11.28
+
+### Added
+
+- Designed test suite for CardCollection component
+- Designed two different use cases for CardCollection component
+
+## 2024.11.15
+
+### Added
+
+- Designed kernel implementation for CardCollection component
+
+### Updated
+
+- Implemented kernel methods, standard methods, and core methods like equals.
+- Added a removeAny method to the kernel. 
+
 ## 2024.11.11
 
 ### Added

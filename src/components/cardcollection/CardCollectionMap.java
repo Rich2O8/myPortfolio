@@ -6,6 +6,9 @@ import components.map.Map1L;
 /**
  * {@code CardCollection} represented as {@link components.map} and
  * {@code String} with implementations of primary methods.
+ *
+ * String is used to create the name of the card while the map is used to store
+ * the values of said card by date.
  */
 public class CardCollectionMap extends CardCollectionSecondary {
     /**
@@ -76,4 +79,39 @@ public class CardCollectionMap extends CardCollectionSecondary {
         }
         return value;
     }
+
+    @Override
+    public final Map.Pair<String, Integer> removeAnyDate() {
+        Map.Pair<String, Integer> dateValue = this.cardValues.removeAny();
+        return dateValue;
+    }
+
+    /**
+     * Standard Methods-----------------------------------------------.
+     */
+
+    @Override
+    public final void clear() {
+        this.card = "";
+        while (this.mapSize() > 0) {
+            Map.Pair<String, Integer> dateValue = this.removeAnyDate();
+        }
+    }
+
+    @Override
+    public final void transferFrom(CardCollection transCard) {
+        this.card = transCard.card();
+        while (transCard.mapSize() > 0) {
+            Map.Pair<String, Integer> dateValue = transCard.removeAnyDate();
+            this.cardValues.add(dateValue.key(), dateValue.value());
+        }
+        transCard.clear();
+    }
+
+    @Override
+    public final CardCollectionMap newInstance() {
+        CardCollectionMap newCard = new CardCollectionMap(this.card());
+        return newCard;
+    }
+
 }

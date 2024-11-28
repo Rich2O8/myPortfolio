@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Ricardo Tinoco Lopez
+- **Dot Number**: tinocolopez.2
+- **Due Date**: 12/04 @ 3:00 pm
 
 ## Assignment Overview
 
@@ -131,8 +131,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -298,18 +296,41 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+After completing the portfolio project, I think I understand software dev a
+bit better now because I was able to finally understand what "this" meant/what
+it was referring to. Additionally, physically seeing how each interface and
+class interacts with each other when implemented helpmed me understand their
+relatinship a bit more. I also learned that methods like those in standard
+should be tailored to each object that isn't java basics like primitives, etc.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+As mentioned above, I never understood what 'this' was referring to so, so I had
+to dig through some of the slides and also asked some of my peers to explain,
+then finally it clicked that 'this' was referring to the object whom the method
+was referrring to. For example, in the constructor method for my component, the
+string that was passed within the constructor would be assigned to the String
+name for it. ex: CardCollectionMap pika = new CardCollectionMap("Pikachu")
+                 -> this.CardName = "Pikachu".
+
+
+Another gap that surfaced was that I didn't know how to call the methods that I
+had implemented for my second usecase, at first I was trying to call them by
+just the name and the parameters, then I noticed that VSCode would change it to
+this.isValuabler for example and that's when it clicked that I had to create an
+object of the class within  main(args[]) so that I could call the method from
+within main(args[]).
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Hmmm, I would say that it is something I enjoy a bit more because I made
+something that I was passionate about and was able to apply what I learned(which
+wasn't much to be honest...my bad). Then again, my enjoyement for software
+development went down after sw1 and other java classes because of the horrible
+wording of most assignments and confusing teaching methods.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -317,29 +338,46 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+1. Thinking more like a programmer.
+2. Using chatGPT...jk I didn't use it.
+3. Using AI like Copilot to help me understand topics better/get examples.
+4. How to use GitHub and VSCode > Eclipse and whatever thing Palo? wants
+   everyone to use for branches.
+5. How to work in software team.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
-
-<!-- TODO: discuss -->
+* Collaborated within a software team to develop 9 programs.
+* Created a Java component to keep track of the value of a trading card at a
+   certain date.
+* Used GitHub and VSCode to ensure safe updates to a program.
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I liked the topic I picked because it was something simple that I could achieve
+with my current software skills. If I had a better understanding of other java
+components outside of the OSU ones (they suck ngl), I would have taken a chance
+to use a dateTime component, additionally, I feel like the structure of the sw
+sequence is lowkey bad (Thank you Jeremy for making sw2 better and enjoyable!).
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+To continue in my career trajectory, I think I could start working on random
+java and python project to better learn Java syntax. I would also like to start
+learning more about data analytics and that stuff, so i think taking some
+linkedin course could be a good idea. Mentors wise, I would say my swe sibling,
+and the swe upperclassmen in my student org.
+
+I will say that I have lost some interest in the software career trajectory,
+mainly because I struggled to undertand concepts in the osu software sequence.
+I'm also an ISE major so it didn't help too much lol.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -374,8 +412,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -426,8 +462,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9

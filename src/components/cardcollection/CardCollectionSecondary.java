@@ -14,8 +14,7 @@ public class CardCollectionSecondary implements CardCollection {
 
     @Override
     public final void changeDate(String originalDate, String date2) {
-        int valAtOgDate = this.removeCardDate(originalDate);
-        this.addCardValue(date2, valAtOgDate);
+        this.addCardValue(date2, this.removeCardDate(originalDate));
     }
 
     @Override

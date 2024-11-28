@@ -1,37 +1,62 @@
 import java.util.HashMap;
-
+/**
+ * Concept of component, very basic.
+ */
 public class CardCollectionConcept {
+    /** name of card. */
     private String card;
+    /** Map where values are stored. */
     private HashMap<String, Integer> cardValues;
 
+    /**
+     * Constructor.
+     * @param cardName
+     */
     public CardCollectionConcept(String cardName) {
         this.card = cardName;
         this.cardValues = new HashMap<String, Integer>();
     }
 
+    /**
+     * gets card name.
+     * @return card name
+     */
     public String getCard() {
         return this.card;
     }
 
+    /**
+     * Adds date,value pair to cardvalues.
+     * @param date
+     * @param value
+     */
     public void setDateValue(String date, int value) {
         this.cardValues.put(date, value);
     }
 
+    /**
+     * Gets the value at {@code date}.
+     * @param date
+     * @return value at date
+     */
     public int getValueAtDate(String date) {
         return this.cardValues.get(date);
     }
 
+    /**
+     * testing.
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-        CardCollectionConcept card1 = new CardCollectionConcept("Pikachu");
+        CardCollectionConcept pika = new CardCollectionConcept("Pikachu");
 
-        String d1 = "10/12/2021", d2 = "12/18/2024";
-        int v1 = 500, v3 = 1500;
+        pika.setDateValue("10/21/2024", 1500);
+        pika.setDateValue("11/14/2024", 5);
 
-        card1.setDateValue(d1, v1);
-        card1.setDateValue(d2, v3);
-
-        System.out.println("Card: " + card1.getCard());
-        System.out.println("Date: " + d2);
-        System.out.println("Value: " + card1.getValueAtDate(d2));
+        System.out.println("This is the rare " + pika.getCard() + " card!");
+        System.out.println(
+                "The value of " + pika.getCard() + " at 10/21/2024 was: ");
+        System.out.println("$ " + pika.getValueAtDate("10/21/2024"));
     }
 }
